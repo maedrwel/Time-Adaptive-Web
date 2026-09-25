@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="calc-page">
+        <div class="calculator">
+
+
+            <div class="calc-header">
+
+                <h2>Calculator</h2>
+            </div>
+
+            <!-- display -->
+            <div class="calc-display">
+                <div class="display-history" id="displayHistory"></div>
+                <div class="display-current" id="displayCurrent">0</div>
+            </div>
+
+            <!-- buttons -->
+            <div class="btn-grid">
+
+                <!-- baris 1 -->
+                 <button class=""btn btn-function" onclick="InputEvent">AC</button>
+                 <button class="btn btn-function" onclick="InputEvent">DEL</button>
+                 <button class="btn btn-function" onclick="InputEvent">%</button>
+                 <button class="btn btn-operator" onclick="InputEvent">/</button>
+
+                <!-- baris 2 -->
+                    <button class="btn btn-number" onclick="InputAngka">7</button>
+                    <button class="btn btn-number" onclick="InputAngka">8</button>
+                    <button class="btn btn-number" onclick="InputAngka">9</button>
+                    <button class="btn btn-operator" onclick="InputEvent">*</button>
+
+                <!-- baris 3 -->
+                    <button class="btn btn-number" onclick="InputAngka">4</button>
+                    <button class="btn btn-number" onclick="InputAngka">5</button>
+                    <button class="btn btn-number" onclick="InputAngka">6</button>
+                    <button class="btn btn-operator" onclick="InputEvent">-</button>   
+                    
+                <!-- baris 4 -->
+                    <button class="btn btn-number" onclick="InputAngka">1</button>
+                    <button class="btn btn-number" onclick="InputAngka">2</button>
+                    <button class="btn btn-number" onclick="InputAngka">3</button>
+                    <button class="btn btn-operator" onclick="InputEvent">+</button>
+
+                <!-- baris 5 -->
+                    <button class="btn btn-number" onclick="InputAngka">0</button>
+                    <button class="btn btn-number" onclick="InputEvent">.</button>
+                    <button class="btn btn-equal" onclick="InputEvent">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
